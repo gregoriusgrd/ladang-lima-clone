@@ -6,6 +6,7 @@ import ProductSwiperSection from "./sections/05-product-swiper";
 import ProductBenefitsSection from "./sections/06-product-benefits";
 import FactorySection from "./sections/07-factory-banner";
 import StatsSection from "./sections/08-stats";
+import Footer from "@/components/footer";
 
 export default function HomeView() {
   return (
@@ -18,6 +19,7 @@ export default function HomeView() {
       <ProductBenefitsSection />
       <FactorySection />
       <StatsSection />
+      <Footer />
     </section>
   );
 }
