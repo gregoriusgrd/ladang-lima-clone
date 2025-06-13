@@ -1,5 +1,3 @@
-"use client";
-
 export default function IntroSection() {
   return (
     <section className="font-koho bg-white px-6 py-20">
