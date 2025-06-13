@@ -4,6 +4,7 @@ import { Figtree } from "next/font/google";
 import { KoHo } from "next/font/google";
 import { Host_Grotesk } from "next/font/google";
 import { Raleway } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 
 import "./globals.css";
 
@@ -34,13 +35,17 @@ const hostgrotesk = Host_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const spacegrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-koho", // this
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-koho", // this
   weight: ["200", "300", "400", "500", "600", "700"],
 });
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -55,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${figtree.variable} ${koho.variable} ${hostgrotesk} ${raleway.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${figtree.variable} ${koho.variable} ${hostgrotesk.variable} ${spacegrotesk.variable} ${raleway.variable} antialiased`}
       >
         {children}
       </body>
