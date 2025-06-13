@@ -5,10 +5,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="font-raleway bg-white px-6 py-20 text-black text-sm md:text-base">
-      <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-y-12 px-4">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-16 px-4">
         {/* Column 1 */}
         <div>
-          <h2 className="mb-4 text-xl md:text-2xl font-semibold">
+          <h2 className="mb-4 text-3xl md:text-4xl font-semibold">
             <Link href="mailto:export@ladanglima.com">
               export@ladanglima.com
             </Link>
