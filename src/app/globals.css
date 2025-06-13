@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-figtree: "Figtree", sans-serif;
+  --font-koho: "KoHo", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
