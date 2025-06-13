@@ -5,6 +5,7 @@ import VideoSection from "./sections/04-video";
 import ProductSwiperSection from "./sections/05-product-swiper";
 import ProductBenefitsSection from "./sections/06-product-benefits";
 import FactorySection from "./sections/07-factory-banner";
+import StatsSection from "./sections/08-stats";
 
 export default function HomeView() {
   return (
@@ -16,6 +17,7 @@ export default function HomeView() {
       <ProductSwiperSection />
       <ProductBenefitsSection />
       <FactorySection />
+      <StatsSection />
     </section>
   );
 }

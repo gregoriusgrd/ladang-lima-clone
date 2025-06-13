@@ -10,7 +10,7 @@ export default function VideoSection() {
     <section className="bg-white px-6 pb-20">
       <div className="mx-auto grid max-w-6xl grid-cols-1 md:grid-cols-2 gap-6 place-items-center">
         
-        {/* Video 1 */}
+        {/* Left */}
         <Link
           href="https://youtu.be/1jLPySqKjdU"
           target="_blank"
@@ -36,7 +36,7 @@ export default function VideoSection() {
           </div>
         </Link>
 
-        {/* Video 2 */}
+        {/* Right */}
         <Link
           href="https://www.youtube.com/watch?v=OTrhopJB4ig"
           target="_blank"
