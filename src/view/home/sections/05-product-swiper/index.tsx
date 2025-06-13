@@ -28,7 +28,7 @@ export default function ProductSwiperSection() {
   ];
 
   return (
-    <section className="bg-white w-screen py-20">
+    <section className="bg-white w-screen">
       <div className="max-w-10xl mx-auto">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}

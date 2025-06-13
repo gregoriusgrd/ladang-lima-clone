@@ -1,6 +1,6 @@
 export default function IntroSection() {
   return (
-    <section className="font-raleway bg-white px-6 py-20">
+    <section className="font-raleway bg-white px-6 py-16">
       <div className="max-w-7xl mx-auto text-center px-16">
         <h5 className="text-lg md:text-xl mb-2 text-black">
           Indonesia’s Pioneer of Gluten Free food products since 2013, Ladang

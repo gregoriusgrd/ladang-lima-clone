@@ -7,7 +7,7 @@ import { BsFillPlayCircleFill } from "react-icons/bs";
 
 export default function VideoSection() {
   return (
-    <section className="bg-[#FAF9F6] px-6 py-20">
+    <section className="bg-white px-6 pb-20">
       <div className="mx-auto grid max-w-6xl grid-cols-1 md:grid-cols-2 gap-6 place-items-center">
         
         {/* Video 1 */}

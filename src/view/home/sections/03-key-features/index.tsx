@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function KeyFeaturesSection() {
   return (
-    <section className="bg-white px-6 py-20">
-        
+    <section className="bg-white px-6 pb-16">
+
       {/* Title */}
       <div className="font-koho mb-12 text-center">
         <h1 className="mb-4 text-5xl font-bold text-[#A08152] md:text-7xl">
