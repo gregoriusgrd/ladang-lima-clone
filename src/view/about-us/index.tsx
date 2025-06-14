@@ -4,6 +4,7 @@ import CommitmentAndTeamSection from "./sections/03-commitment-and-team";
 import StatsSection from "./sections/04-stats";
 import FAQSection from "./sections/05-faq";
 import PartnerSection from "./sections/06-partner";
+import Footer from "@/components/footer";
 
 export default function AboutUsView() {
     return(
@@ -14,6 +15,7 @@ export default function AboutUsView() {
             <StatsSection />
             <FAQSection />
             <PartnerSection />
+            <Footer />
         </main>
     )
 }
