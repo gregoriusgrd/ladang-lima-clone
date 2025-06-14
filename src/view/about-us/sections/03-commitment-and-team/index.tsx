@@ -7,7 +7,7 @@ export default function CommitmentAndTeamSection() {
   return (
     <section className="font-raleway flex flex-col md:flex-row">
       {/* Left */}
-      <div className="flex flex-col justify-center gap-16 bg-[#8B963B] px-6 py-16 text-white md:w-1/2">
+      <div className="flex flex-col justify-center gap-16 bg-[#8B963B] px-6 pb-16 text-white md:w-1/2">
         
         {/* 1 */}
         <div className="flex flex-col gap-4 px-6">

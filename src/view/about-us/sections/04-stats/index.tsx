@@ -2,7 +2,7 @@
 
 export default function StatsSection() {
   return (
-    <section className="font-raleway bg-white px-6 py-20">
+    <section className="font-raleway bg-white px-6 py-16">
       <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
         {/* Left */}
         <div className="pt-4 pl-2">

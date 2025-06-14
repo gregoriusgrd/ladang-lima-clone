@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="font-raleway bg-white px-6 py-20">
+    <section className="font-raleway bg-white px-6 py-16">
       <div className="container mx-auto space-y-20">
 
 
@@ -19,7 +19,7 @@ export default function AboutSection() {
           />
 
           <div className="max-w-3xl text-center md:text-left">
-            <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
+            <h2 className="mb-4 text-3xl md:text-4xl font-semibold text-gray-900 leading-relaxed">
               About Company
             </h2>
             <p className="leading-relaxed text-gray-600 md:text-lg">
@@ -44,7 +44,7 @@ export default function AboutSection() {
             className="mx-auto h-auto w-full max-w-[300px]"
           />
           <div className="max-w-3xl text-center md:text-left">
-            <h2 className="mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
+            <h2 className="mb-4 text-3xl md:text-4xl font-semibold text-gray-900 leading-relaxed">
               Our Brand
             </h2>
             <p className="leading-relaxed text-gray-600 md:text-lg">

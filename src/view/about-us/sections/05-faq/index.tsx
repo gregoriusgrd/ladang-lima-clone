@@ -10,11 +10,12 @@ import {
 
 export default function FAQSection() {
   return (
-    <section className="font-raleway bg-white px-6 pb-6">
+    <section className="font-raleway bg-white px-6 pb-16">
       <div className="mx-auto max-w-7xl pl-8">
+
         {/* Accordion */}
         <div>
-          <h2 className="mb-6 text-2xl font-bold md:text-3xl">
+          <h2 className="mb-6 text-3xl md:text-4xl font-semibold text-gray-900 leading-relaxed">
             Frequently Asked Questions (FAQ)
           </h2>
           <Accordion type="single" collapsible className="w-full">

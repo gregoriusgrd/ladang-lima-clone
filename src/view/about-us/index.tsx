@@ -3,6 +3,7 @@ import AboutSection from "./sections/02-about";
 import CommitmentAndTeamSection from "./sections/03-commitment-and-team";
 import StatsSection from "./sections/04-stats";
 import FAQSection from "./sections/05-faq";
+import PartnerSection from "./sections/06-partner";
 
 export default function AboutUsView() {
     return(
@@ -12,6 +13,7 @@ export default function AboutUsView() {
             <CommitmentAndTeamSection />
             <StatsSection />
             <FAQSection />
+            <PartnerSection />
         </main>
     )
 }
