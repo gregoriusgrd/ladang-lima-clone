@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
-export default function Navbar() {
+export default function NavbarDark() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [productMenuOpen, setProductMenuOpen] = useState(false);
 
@@ -67,7 +67,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="font-raleway hidden space-x-8 pr-6 font-medium text-white uppercase md:flex">
+        <nav className="font-raleway hidden space-x-8 pr-6 font-medium text-black uppercase md:flex">
           <Link href="/">Home</Link>
           <Link href="/about-us">About Us</Link>
 
