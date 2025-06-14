@@ -51,7 +51,7 @@ export default function CommitmentAndTeamSection() {
         {/* 1 */}
         <div className="relative h-[350px] w-1/2 sm:h-[400px]">
           <Image
-            src="/about-us/commitment/raka-ceo.jpg"
+            src="/about-us/commitment-and-team/raka-ceo.jpg"
             alt="Foto Raka"
             fill
             className="object-cover object-top"
@@ -65,7 +65,7 @@ export default function CommitmentAndTeamSection() {
         {/* 2 */}
         <div className="relative h-[350px] w-1/2 sm:h-[400px]">
           <Image
-            src="/about-us/commitment/nysa-director.jpeg"
+            src="/about-us/commitment-and-team/nysa-director.jpeg"
             alt="Foto Nysa"
             fill
             className="object-cover object-top"
@@ -79,7 +79,7 @@ export default function CommitmentAndTeamSection() {
         {/* 3 */}
         <div className="relative h-[350px] w-1/2 sm:h-[400px]">
           <Image
-            src="/about-us/commitment/ucup-factory-superintendent.webp"
+            src="/about-us/commitment-and-team/ucup-factory-superintendent.webp"
             alt="Foto Ucup"
             fill
             className="object-cover object-top"
@@ -93,7 +93,7 @@ export default function CommitmentAndTeamSection() {
         {/* 4 */}
         <div className="relative h-[350px] w-1/2 sm:h-[400px]">
           <Image
-            src="/about-us/commitment/elionora-research-and-dev.webp"
+            src="/about-us/commitment-and-team/elionora-research-and-dev.webp"
             alt="Foto Elionora"
             fill
             className="object-cover object-top"
