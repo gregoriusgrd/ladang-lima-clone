@@ -114,7 +114,6 @@ export default function Navbar() {
 
           <Link href="/blog-list" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Blog List</Link>
           <Link href="/contact-us" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact Us</Link>
-          <Link href="/contact-us" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Teams</Link>
         </nav>
       </div>
 
@@ -175,11 +174,6 @@ export default function Navbar() {
             <li className="border-b border-gray-700 py-2">
               <Link href="/contact-us" onClick={() => setMobileMenuOpen(false)}>
                 Contact Us
-              </Link>
-            </li>
-            <li className="py-2">
-              <Link href="/teams" onClick={() => setMobileMenuOpen(false)}>
-                Teams
               </Link>
             </li>
           </ul>
