@@ -41,7 +41,7 @@ export default function Navbar() {
 
         {/* Mobile strip buton */}
         <button
-          className="md:hidden"
+          className="md:hidden cursor-pointer text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           <svg
@@ -55,7 +55,7 @@ export default function Navbar() {
               y1="1"
               x2="45.5"
               y2="1"
-              stroke="black"
+              stroke="white"
               strokeWidth="2"
             />
             <line
@@ -63,7 +63,7 @@ export default function Navbar() {
               y1="13"
               x2="45.5"
               y2="13"
-              stroke="black"
+              stroke="white"
               strokeWidth="2"
             />
           </svg>
@@ -120,7 +120,7 @@ export default function Navbar() {
 
       {/* Mobile nav portfolio */}
       {mobileMenuOpen && (
-        <div className="absolute top-[70px] right-6 z-50 w-40 rounded-md border border-gray-600 bg-[#2a2a2a] text-white shadow-md md:hidden">
+        <div className="absolute top-[70px] right-6 z-50 w-40 rounded-md border border-gray-600 bg-gray-600 text-white shadow-md md:hidden">
           <ul className="flex flex-col py-2 text-center">
             <li className="border-b border-gray-700 py-2">
               <Link href="/" onClick={() => setMobileMenuOpen(false)}>
