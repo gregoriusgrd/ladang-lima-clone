@@ -36,7 +36,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile strip buton */}
         <button
           className="md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -66,7 +66,7 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Nav */}
         <nav className="font-raleway hidden space-x-8 pr-6 font-medium text-white uppercase md:flex">
           <Link href="/">Home</Link>
           <Link href="/about-us">About Us</Link>
@@ -94,7 +94,7 @@ export default function Navbar() {
                   Gluten Free Cookies
                 </Link>
                 <Link
-                  href="#"
+                  href="/our-products/noodle"
                   className="block w-full rounded px-2 py-1 text-sm text-gray-700 hover:bg-gray-100"
                 >
                   Gluten Free Noodle

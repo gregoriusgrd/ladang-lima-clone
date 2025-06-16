@@ -11,8 +11,8 @@ export default function HeroSection() {
         {/* Navbar */}
         <div>
           <Image
-            src="/our-products/cookies/Our-Product-Banner-Cookies.webp"
-            alt="Ladang Lima Cookies Banner"
+            src="/our-products/noodle/Our-Product-Banner-Noodle.webp"
+            alt="Ladang Lima Noodle Banner"
             width={1920}
             height={1080}
             className="w-full h-auto max-h-full object-contain"
