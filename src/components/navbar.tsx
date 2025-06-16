@@ -111,11 +111,11 @@ export default function Navbar() {
 
           <Link href="/blog-list">Blog List</Link>
           <Link href="/contact-us">Contact Us</Link>
-          <Link href="https://career.ladanglima.com">Career With Us</Link>
+          <Link href="/contact-us">Teams</Link>
         </nav>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile temp */}
       {mobileMenuOpen && (
         <nav className="space-y-3 border-t border-gray-200 bg-white px-6 py-4 text-gray-700 md:hidden">
           <Link href="/">Home</Link>
@@ -131,7 +131,6 @@ export default function Navbar() {
           </details>
           <Link href="/blog">Article</Link>
           <Link href="/contact-us">Contact Us</Link>
-          <Link href="https://career.ladanglima.com">Career With Us</Link>
         </nav>
       )}
     </header>
