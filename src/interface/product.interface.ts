@@ -13,6 +13,7 @@ export interface IProductLadangLima {
         };
       };
     };
+    category: string;
     features?: IFeatureLadangLima[];
     // article: Document | undefined;
   };
@@ -34,5 +35,4 @@ export interface IFeatureLadangLima {
         }
     }
 }
-
 

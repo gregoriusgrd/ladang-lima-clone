@@ -109,7 +109,7 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/blog">Article</Link>
+          <Link href="/blog-list">Blog List</Link>
           <Link href="/contact-us">Contact Us</Link>
           <Link href="https://career.ladanglima.com">Career With Us</Link>
         </nav>

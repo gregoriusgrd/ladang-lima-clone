@@ -13,7 +13,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   console.log("Features dari produk:", features);
 
   return (
-    <article className="flex flex-col gap-8 lg:flex-row items-start border-b pb-10 mb-10">
+    <article className="flex flex-col gap-8 lg:flex-row items-start border-b px-6 pb-10 mb-10">
       {/* Left */}
       <div className="flex-1">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">{productName}</h2>

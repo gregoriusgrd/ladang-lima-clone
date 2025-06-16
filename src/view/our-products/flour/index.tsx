@@ -9,12 +9,16 @@ interface BlogSectionProps {
 */
 
 export default async function FlourView() {
-    const products = await fetchProductService();
+    const allProducts = await fetchProductService();
+
+    const flourProducts = allProducts.filter(
+        (product) => product.fields.category === "flour"
+    )
 
     return(
         <main>
             <HeroSection />
-            <ProductSection products={products} />
+            <ProductSection products={flourProducts} />
         </main>
     )
 }
