@@ -8,7 +8,7 @@ export async function fetchProductService(): Promise<IProductLadangLima[]> {
     const { data } = await axios.get(url, {
       params: {
         access_token: process.env.NEXT_PUBLIC_CONTENTFUL_API_KEY,
-        content_type: "productLadangLima", // Contentful content type ID 
+        content_type: "productLadangLima", // daper dari setting copy id
         include: 2, // 2 untuk features & feature image
       },
     });
@@ -24,13 +24,11 @@ export async function fetchProductService(): Promise<IProductLadangLima[]> {
     });
 
     const products = data.items.map((item: any) => {
-      // Map productImage
+
       const productImageRef = item.fields.productImage;
       if (productImageRef?.sys?.id && assetsMap[productImageRef.sys.id]) {
         item.fields.productImage = assetsMap[productImageRef.sys.id];
       }
-
-      // Map features & feature image
       
       const featureRefs = item.fields.features || [];
       item.fields.features = featureRefs.map((ref: any) => {

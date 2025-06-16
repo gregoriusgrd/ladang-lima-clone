@@ -74,7 +74,7 @@ export default function Navbar() {
           <Link href="/" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Home</Link>
           <Link href="/about-us" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About Us</Link>
 
-          {/* Dropdown disini */}
+          {/* Dropdownn */}
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setProductMenuOpen(!productMenuOpen)}
