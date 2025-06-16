@@ -23,7 +23,7 @@ export default function Navbar() {
   })
 
   return (
-    <header className="top-0 z-50 w-full bg-[rgba(0,_0,_0,_0.5)]">
+    <header className="top-0 z-50 w-full bg-[rgba(0,_0,_0,_0.2)]">
       <div className="flex items-center justify-between px-10 py-2">
         {/* Logo */}
         <Link href="#">
@@ -88,7 +88,7 @@ export default function Navbar() {
                   Gluten Free Flour
                 </Link>
                 <Link
-                  href="#"
+                  href="/our-products/cookies"
                   className="block w-full rounded px-2 py-1 text-sm text-gray-700 hover:bg-gray-100"
                 >
                   Gluten Free Cookies
