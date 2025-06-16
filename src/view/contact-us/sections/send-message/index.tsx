@@ -3,11 +3,11 @@
 
 export default function SendMessageSection() {
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="font-raleway bg-white py-20 px-6">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-2 items-start">
         <div>
-          <h3 className="text-2xl md:text-3xl font-medium text-gray-900">
-            Offering an array of products in the fields of <br />
+          <h3 className="text-2xl md:text-3xl font-semibold ml-2">
+            Offering an array of products in the fields <br /> of
             Gluten-Free and Healthy foods.
           </h3>
         </div>
