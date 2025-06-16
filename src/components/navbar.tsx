@@ -12,18 +12,21 @@ export default function Navbar() {
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if(dropdownRef.current && !(dropdownRef.current as any).contains(event.target)) {
+      if (
+        dropdownRef.current &&
+        !(dropdownRef.current as any).contains(event.target)
+      ) {
         setProductMenuOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
-    return() => {
+    return () => {
       document.removeEventListener("mousedown", handleClickOutside);
-    }
-  })
+    };
+  });
 
   return (
-    <header className="top-0 z-50 w-full bg-[rgba(0,_0,_0,_0.2)]">
+    <header className="top-0 z-50 w-full bg-[rgba(0,_0,_0,_0.1)]">
       <div className="flex items-center justify-between px-10 py-2">
         {/* Logo */}
         <Link href="#">
@@ -68,14 +71,14 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="font-raleway hidden space-x-8 pr-6 font-medium text-white uppercase md:flex">
-          <Link href="/">Home</Link>
-          <Link href="/about-us">About Us</Link>
+          <Link href="/" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Home</Link>
+          <Link href="/about-us" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About Us</Link>
 
           {/* Dropdown disini */}
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setProductMenuOpen(!productMenuOpen)}
-              className="font-raleway cursor-pointer font-medium text-white uppercase"
+              className="cursor-pointer uppercase relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
             >
               Our Products
             </button>
@@ -100,7 +103,7 @@ export default function Navbar() {
                   Gluten Free Noodle
                 </Link>
                 <Link
-                  href="#"
+                  href="/our-products/pasta"
                   className="block w-full rounded px-2 py-1 text-sm text-gray-700 hover:bg-gray-100"
                 >
                   Gluten Free Pasta
@@ -109,29 +112,78 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/blog-list">Blog List</Link>
-          <Link href="/contact-us">Contact Us</Link>
-          <Link href="/contact-us">Teams</Link>
+          <Link href="/blog-list" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Blog List</Link>
+          <Link href="/contact-us" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Contact Us</Link>
+          <Link href="/contact-us" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Teams</Link>
         </nav>
       </div>
 
-      {/* Mobile temp */}
+      {/* Mobile nav portfolio */}
       {mobileMenuOpen && (
-        <nav className="space-y-3 border-t border-gray-200 bg-white px-6 py-4 text-gray-700 md:hidden">
-          <Link href="/">Home</Link>
-          <Link href="/about-us">About Us</Link>
-          <details>
-            <summary className="cursor-pointer">Our Products</summary>
-            <div className="mt-2 space-y-2 pl-4">
-              <Link href="/flour">Gluten Free Flour</Link>
-              <Link href="/cookies">Gluten Free Cookies</Link>
-              <Link href="/noodle">Gluten Free Noodle</Link>
-              <Link href="/pasta">Gluten Free Pasta</Link>
-            </div>
-          </details>
-          <Link href="/blog">Article</Link>
-          <Link href="/contact-us">Contact Us</Link>
-        </nav>
+        <div className="absolute top-[70px] right-6 z-50 w-40 rounded-md border border-gray-600 bg-[#2a2a2a] text-white shadow-md md:hidden">
+          <ul className="flex flex-col py-2 text-center">
+            <li className="border-b border-gray-700 py-2">
+              <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+                Home
+              </Link>
+            </li>
+            <li className="border-b border-gray-700 py-2">
+              <Link href="/about-us" onClick={() => setMobileMenuOpen(false)}>
+                About Us
+              </Link>
+            </li>
+            <li className="border-b border-gray-700 py-2">
+              <details className="group">
+                <summary className="cursor-pointer">Our Products</summary>
+                <div className="mt-2 space-y-1 text-sm text-white">
+                  <Link
+                    href="/our-products/flour"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block"
+                  >
+                    Flour
+                  </Link>
+                  <Link
+                    href="/our-products/cookies"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block"
+                  >
+                    Cookies
+                  </Link>
+                  <Link
+                    href="/our-products/noodle"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block"
+                  >
+                    Noodle
+                  </Link>
+                  <Link
+                    href="/our-products/pasta"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block"
+                  >
+                    Pasta
+                  </Link>
+                </div>
+              </details>
+            </li>
+            <li className="border-b border-gray-700 py-2">
+              <Link href="/blog-list" onClick={() => setMobileMenuOpen(false)}>
+                Blog List
+              </Link>
+            </li>
+            <li className="border-b border-gray-700 py-2">
+              <Link href="/contact-us" onClick={() => setMobileMenuOpen(false)}>
+                Contact Us
+              </Link>
+            </li>
+            <li className="py-2">
+              <Link href="/teams" onClick={() => setMobileMenuOpen(false)}>
+                Teams
+              </Link>
+            </li>
+          </ul>
+        </div>
       )}
     </header>
   );

@@ -9,18 +9,18 @@ interface BlogSectionProps {
 }
 */
 
-export default async function NoodleView() {
+export default async function PastaView() {
     const allProducts = await fetchProductService();
 
-    const noodleProducts = allProducts.filter(
-        (product) => product.fields.category === "noodle"
+    const pastaProducts = allProducts.filter(
+        (product) => product.fields.category === "pasta"
     )
 
     return(
         <main>
             <HeroSection />
             <IntroSection />
-            <ProductSection products={noodleProducts} />
+            <ProductSection products={pastaProducts} />
             <Footer />
         </main>
     )
